@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(22, 21, 21);
+}
+
+.an{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar{
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #daf8e3;
+}
+
+.nav-content{
+    text-transform: uppercase;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.burger-lines{
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.line{
+    height: 2px;
+    width: 35px;
+    margin: 0.5rem 0;
+    background: #daf8e3;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+@media screen and (max-width: 10000px){
+    .nav-content{
+        width: 60%;
+    }    
+    .nav-bar.show .line1{
+        transform: translate(-10px) rotate(45deg) translate(15px);
+    }
+    .nav-bar.show .line2{
+        opacity: 0;
+    }
+    .nav-bar.show .line3{
+        transform: translate(-10px) rotate(-45deg) translate(15px);
+    }
+    .nav-bar.show .nav-content{
+        transform: translateX(-60%);
+    }
+}
+
+@media screen and (max-width: 10000px){
+    .nav-content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 10000px){
+    .burger-lines {
+        display: block;
+      }
+    .nav-content {
+        position: fixed;
+        right: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-200%);
+        transition: transform 1s ease;
+    }
+}
+
+
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+    top: 190px;
+    text-align: center;
+    margin: 0;
+    margin-left: 38.5%;
+}
+
+.sub{
+    margin: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    margin-left: 33%;
+    top: 240px;
+}
+
+.slides{
+    width: 100%;
+    height: 530px;
+    opacity: 0.3;
+}
+
+.btn{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 27px;
+    bottom: 52%;
+    right: 46.5%;
+}
+
+.content{
+    margin-top: 57px;
+    position: absolute;
+    top: 528px;
+    left: 14%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .a{
+    margin: 15px;
+    width: 350px;
+}
+
+.content .b{
+    margin: 15px;
+}
+
+.content .c{
+    margin: 15px;
+    width: 350px;
+}
+
+p{
+    color: white;
+    font-weight: 60px;
+}
+
+.a1{
+    position: absolute;
+    top: 330px;
+    left: 20px;
+}
+.a2{
+    position: absolute;
+    top: 330px;
+    right: 390px;
+}
+
+.a3{
+    position: absolute;
+    top: 330px;
+    right: 160px;
+}
+
+.change{
+    position: absolute;
+    margin-left: 650px;
+    top: 2500px;
+}
+
+.text{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 25%;
+    text-align: center;
+    font-family: "Biryani";
+    font-size: 18px;
+    font-weight: 20;
+}
+
+.photo{
+    margin-left: 35%;
+    margin-top: 35%;
+    width: 435px;
+    height: 350px;
+}    
+
+.text .p1{
+    margin-bottom: 23px;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 29%;
+    height: 170px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: row;
+}
+
+footer .t{
+    position: absolute;
+    top: 1830px;
+    margin-left: 485px;
+}
+
+i{
+    margin: 8px;
+    margin-top: 133px;
+    color: white;
+}
+
+span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(-65px);
+    display:inline-block;
+}
+
+span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+}

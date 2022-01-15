@@ -1,0 +1,85 @@
+body{
+	background-image:url(pictures/fooddesign.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+h1{
+	font-size:40px;
+	text-align:center;
+	font-family:Arial,Halvetica,sans-serif;
+	color:white;
+	text-transform:uppercase;
+	margin-top:230px;
+}
+
+.button{
+	margin-top:20px;
+	text-align:center;
+}
+
+.b{
+	border:1px solid white;
+	padding:10px 30px;
+	font-size:22px;
+	text-decoration:none;
+	margin-right:5px;
+	color:white;
+	text-transform:uppercase;
+}
+
+.btn1{
+	font-family:"Roboto",sans-serif;
+}
+
+.btn2{
+	font-family:"Roboto",sans-serif;
+}
+
+.btn1:hover
+{
+	background-color:#9ab097;
+	transition:0.7s;
+}
+
+.btn2:hover
+{
+	background-color:#9ab097;
+	transition:0.7s;
+}
+
+.home{
+	font-family:sans-serif,Arial,Halvetica;
+	font-size:20;
+	margin-left:1170px;
+	text-decoration:none;
+	margin-top:37px;
+}
+
+.Nav{
+	text-transform:uppercase;
+	text-decoration:none;
+	color:white;
+	border:1px solid white;
+	padding:10px 30px;
+}
+
+.Nav:hover{
+	background:#9ab097;
+	transition:0.8s;
+}
+
+td{
+	font-weight:bold;
+	color:white;
+	font-family:Serif,"Times New Roman";
+	font-size:15pt;
+	color:white;
+}
+
+p{
+	font-family:sans-serif,Halvetica,Arial;
+	font-size:14pt;
+	color:white;
+}

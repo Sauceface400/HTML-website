@@ -1,0 +1,30 @@
+<script>
+    var i = 0;//start of the image
+    var image = [];//list of image 
+    var time = 3000;//change the image every 3 seconds
+
+    //list of images
+    image[0] = 'shoes.jpg';
+    image[1] = 'shoes2.jpg';
+    image[2] = 'shoes3.jpg';
+    
+    //this function is to change image
+    function ChangeImg(){
+        document.slide.src = image[i];
+        //check the index if it's under max
+        if(i < image.length - 1){
+            //add 1 to the index
+            i ++;
+        }else{
+            //this is to reset back to zero
+            i = 0;
+        }
+        //this is to run the function for number of time that is given
+        setTimeout("ChangeImg()", time);
+    }
+    //when the page load's the function will run
+    window.onload = ChangeImg;
+
+</script>
+
+<img name="slide" width="400" height="200">

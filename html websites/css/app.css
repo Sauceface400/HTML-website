@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.tap {
+    background: rgb(127, 178, 196);
+    width: 100%;
+    display: flex;
+}
+
+.tap > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+.tap1 {
+    background: #60d394;
+}
+.tap2 {
+    background: #d36060;
+}
+.tap3 {
+    background: #c060d3;
+}
+.tap4 {
+    background: #d3d160;
+}
+.tap5 {
+    background: #606bd3;
+}
+.tap6 {
+    background: #60c2d3;
+}
+
+.visual > div{ 
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+       bottom: 0%;
+       left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
